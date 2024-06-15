@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit";
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+body {
+    background-color: var(--eggshell);
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 60%;
+    margin-inline: auto;
+}
+
+h1 {
+    font-family: "Young Serif";
+    color: var(--dark-charcoal);
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: "Young Serif";
+    color: var(--nutmeg)
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+p, li {
+    line-height: 24px;
+    color: var(--dark-charcoal);
+}
+
+li {
+    margin-top: 8px;
+}
+
+.container div:not(first-child) {
+    padding: 24px;
+}
+
+.banner h1 {
+    margin-bottom: 16px;
+}
+
+.banner article {
+    background-color: var(--rose-white);
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+.banner article h3 {
+    color: var(--dark-raspberry);
+    margin-bottom: 8px;
+}
+
+.instructions {
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition p {
+    margin-top: 16px;
+}
+
+.nutrition ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--light-grey);
+    padding: 8px 0;
+}
+
+.nutrition ul li:last-child {
+    border-bottom: none;
+}
+
+.attribution {
+    font-size: 13px; 
+    text-align: center; 
+    margin-bottom: 80px;
+    margin-top: 16px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    img {
+        border-radius: 10px;
+    }
+    .container {
+        margin: 80px auto 0;
+        padding: 32px;
+        border-radius: 16px;
+    }
+}
