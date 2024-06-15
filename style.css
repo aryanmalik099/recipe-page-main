@@ -30,7 +30,7 @@ body {
 
 .container {
     background-color: var(--white);
-    max-width: 100%;
+    max-width: 100vh;
     margin-inline: auto;
 }
 
