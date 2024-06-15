@@ -30,7 +30,7 @@ body {
 
 .container {
     background-color: var(--white);
-    max-width: 60%;
+    max-width: 100%;
     margin-inline: auto;
 }
 
@@ -119,5 +119,6 @@ li {
         margin: 80px auto 0;
         padding: 32px;
         border-radius: 16px;
+        max-width: 100%;
     }
 }
